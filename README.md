@@ -10,8 +10,8 @@
 
 ## Features
 
-- **✅ Schema Validation:** Automatically validate request parameters, query strings, and body content with built-in error handling.
-- **🧷 Type-Safe:** Work with full TypeScript type safety for parameters, query strings, and body content.
+- **✅ Schema Validation:** Automatically validates request parameters, query strings, and body content with built-in error handling.
+- **🧷 Type-Safe:** Works with full TypeScript type safety for parameters, query strings, and body content.
 - **😌 Easy to Use:** Simple and intuitive API that makes defining route handlers a breeze.
 - **🔗 Extensible:** Compatible with any validation library supported by [TypeSchema](https://typeschema.com).
 - **🧪 Fully Tested:** Extensive test suite to ensure everything works reliably.
@@ -28,8 +28,8 @@ The library natively works with [zod](https://zod.dev) for schema validation, bu
 
 ```ts
 // app/api/hello/route.ts
-import { createSafeRoute } from 'next-safe-route';
-import { z } from 'zod';
+import { createSafeRoute } from "next-safe-route";
+import { z } from "zod";
 
 const paramsSchema = z.object({
   id: z.string(),
